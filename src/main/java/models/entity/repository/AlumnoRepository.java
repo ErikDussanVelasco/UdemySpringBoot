@@ -8,4 +8,5 @@ import models.entity.Alumno;
 //y el nombre tipo de ID para relacionar la interfz con el entity
 public interface AlumnoRepository extends CrudRepository<Alumno, Long> {
 
+	
 }

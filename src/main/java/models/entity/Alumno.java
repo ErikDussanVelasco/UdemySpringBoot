@@ -10,10 +10,11 @@ import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 
-@Entity
+
 //las tablas deben ir todo en mayuscula o minuscula
 
 @Table(name="alumnos") // se especifica el nombre si no la base de datos asigna el nombre de la clase como predeterminado
+@Entity
 public class Alumno {
 	
 	@Id //para indicar que es una clave
@@ -61,6 +62,7 @@ public class Alumno {
 	
 	
 	@PrePersist
+	//esta anotacion permite que este metodo se ejecute de primero antes que todo
 	public void prePersist() {
 		this.createAT= LocalDateTime.now();
 	}
