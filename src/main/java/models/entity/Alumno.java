@@ -10,7 +10,7 @@ import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 
-
+//Entidad alumno designado como tabla y cada atributo como una columna
 //las tablas deben ir todo en mayuscula o minuscula
 
 @Table(name="alumnos") // se especifica el nombre si no la base de datos asigna el nombre de la clase como predeterminado
